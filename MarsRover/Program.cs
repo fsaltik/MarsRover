@@ -8,28 +8,18 @@ ServiceProvider serviceProvider =
     new ServiceCollection().AddTransient<ICommand, Command>()
         .BuildServiceProvider();
 
-//var input= Console.ReadLine();
-// 
-// input+="\n" +  Console.ReadLine();
-// input+="\n" + Console.ReadLine();
-// input+="\n" + Console.ReadLine();
-// input+="\n" + Console.ReadLine();
+var input = Console.ReadLine();
 
-var input = string.Format(@"5 5
-1 8 N
-LMLMLMLMMLLLLLL
-3 3 E
-MMRMMRMRRMMM
-1 2 N
-LMLMLMLMM
-3 3 E
-MMRMMRMRRM
-3 3 E
-MMRMMRMRRM
-1 7 N
-LMLMLMLMM
-3 3 E
-MMRMMRMRRM");
+input += "\n" + Console.ReadLine();
+input += "\n" + Console.ReadLine();
+input += "\n" + Console.ReadLine();
+input += "\n" + Console.ReadLine();
+
+// var input = string.Format(@"5 5
+// 1 2 N
+// LMLMLMLMM
+// 3 3 E
+// MMRMMRMRRM");
 
 GetRoverPosition(input);
 
